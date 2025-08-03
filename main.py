@@ -3,6 +3,9 @@ import json
 from dotenv import load_dotenv
 import chainlit as cl
 from litellm import completion
+import streamlit as st
+api_key = st.secrets["GEMINI_API_KEY"]
+
 
 # Load environment variables
 load_dotenv()
